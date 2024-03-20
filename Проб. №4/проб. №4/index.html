@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css">
+    <title>Платная автодорога</title>
+  </head>
+  <body>
+    <main class="container">
+      
+    <title>проб. №4</title>
+</head>
+<body>
+    <h2>Платная автодорога</h2>
+    <table>
+        <div id="standart">
+            <td><input type="radio" id="var1" name="huy" onchange="var1" ></td>
+            <td><h3>Типовой РФ</h3></td>
+            <td><input type="text" placeholder="А000АА" id="nom1"  maxlength="6"></td>
+            <td><h3>Регион</h3></td>
+            <td><input type="number" placeholder="000" maxlength="3" id="reg1"></td>
+        </div>
+        <div id="not_standart">
+            <tr><td><input type="radio" id="var2" name="huy" onchange="var2" ></td>
+            <td><h3>Иной</h3></td>
+            <td><input type="text" id="nom2"></td></tr>
+        </div>
+
+    </table>
+
+
+        <input type="button" id="add" value="Внести" onclick="add()">
+        <h2>Проехали</h2>
+        <input type="button" id="dell" value="Проехали все" onclick="dell()">
+        <div id="prorhali"></div>
+        <script src="main.js"></script>
+</body>
+</html>
